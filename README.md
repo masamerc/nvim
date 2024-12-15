@@ -29,12 +29,7 @@ NVIM_APPNAME=masamerc/nvim/ nvim
 
 + [sainnhe/gruvbox-material](https://dotfyle.com/plugins/sainnhe/gruvbox-material)
 + [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
-+ [Mofiqul/dracula.nvim](https://dotfyle.com/plugins/Mofiqul/dracula.nvim)
-+ [neanias/everforest-nvim](https://dotfyle.com/plugins/neanias/everforest-nvim)
 + [rose-pine/neovim](https://dotfyle.com/plugins/rose-pine/neovim)
-+ [rebelot/kanagawa.nvim](https://dotfyle.com/plugins/rebelot/kanagawa.nvim)
-+ [sainnhe/edge](https://dotfyle.com/plugins/sainnhe/edge)
-+ [sainnhe/sonokai](https://dotfyle.com/plugins/sainnhe/sonokai)
 + [folke/tokyonight.nvim](https://dotfyle.com/plugins/folke/tokyonight.nvim)
 ### colorscheme-creation
 
