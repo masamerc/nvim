@@ -1,16 +1,9 @@
 -- theme swticher
 local workenv = os.getenv("WORK_ENV")
-local hostname = os.getenv("HOSTNAME")
 
 if workenv == "work" then
 	vim.cmd("colorscheme catppuccin")
-elseif workenv == "linux" then
-	vim.cmd("colorscheme tokyonight-night")
 else
-	vim.cmd("colorscheme tokyonight-night")
-end
-
-if hostname == "pop-os" then
 	vim.cmd("colorscheme tokyonight-night")
 end
 

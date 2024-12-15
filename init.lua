@@ -1,7 +1,7 @@
 -- env switch
 local work_env = os.getenv("WORK_ENV")
 
--- disable netrw at the very start of your init.lua
+-- disable netrw at the very start of init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -54,7 +54,6 @@ require("plugin_config.misc")
 require("plugin_config.lualine")
 require("plugin_config.rose-pine")
 require("plugin_config.diffview")
--- require("plugin_config.toggleterm")
 
 -- load format options
 require("format")
