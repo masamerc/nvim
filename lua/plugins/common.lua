@@ -26,7 +26,6 @@ return {
 			})
 		end,
 	},
-	{ "rebelot/kanagawa.nvim", name = "rebelot" },
 	{ "nvim-lua/plenary.nvim" },
 	{
 		"nvim-telescope/telescope.nvim",
@@ -201,24 +200,7 @@ return {
 			})
 		end,
 	},
-	{ "Mofiqul/dracula.nvim" },
-	-- { "akinsho/toggleterm.nvim", version = "*" },
 	{ "sainnhe/gruvbox-material" },
-	{ "sainnhe/sonokai" },
-	{
-		"neanias/everforest-nvim",
-		version = false,
-		lazy = false,
-		priority = 1000, -- make sure to load this before all the other start plugins
-		config = function()
-			require("everforest").setup({
-				background = "hard",
-				transparent_background_level = 2,
-			})
-		end,
-	},
-	{ "sainnhe/edge" },
-	{ "sainnhe/forest-night" },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{
 		"loctvl842/monokai-pro.nvim",
