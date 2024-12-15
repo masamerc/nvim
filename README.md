@@ -2,7 +2,138 @@
 
 Neovim configuration for [masamerc](https://github.com/masamerc)
 
-<a href="https://dotfyle.com/Masamerc/dotfiles-nvim"><img src="https://dotfyle.com/Masamerc/dotfiles-nvim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/Masamerc/dotfiles-nvim"><img src="https://dotfyle.com/Masamerc/dotfiles-nvim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/Masamerc/dotfiles-nvim"><img src="https://dotfyle.com/Masamerc/dotfiles-nvim/badges/plugin-manager?style=flat" /></a>
+<a href="https://dotfyle.com/masamerc/nvim"><img src="https://dotfyle.com/masamerc/nvim/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/masamerc/nvim"><img src="https://dotfyle.com/masamerc/nvim/badges/leaderkey?style=flat" /></a>
+<a href="https://dotfyle.com/masamerc/nvim"><img src="https://dotfyle.com/masamerc/nvim/badges/plugin-manager?style=flat" /></a>
 
+
+## Install Instructions
+
+ > Install requires Neovim 0.9+. Always review the code before installing a configuration.
+
+Clone the repository and install the plugins:
+
+```sh
+git clone git@github.com:masamerc/nvim ~/.config/masamerc/nvim
+```
+
+Open Neovim with this config:
+
+```sh
+NVIM_APPNAME=masamerc/nvim/ nvim
+```
+
+## Plugins
+
+### colorscheme
+
++ [sainnhe/gruvbox-material](https://dotfyle.com/plugins/sainnhe/gruvbox-material)
++ [catppuccin/nvim](https://dotfyle.com/plugins/catppuccin/nvim)
++ [Mofiqul/dracula.nvim](https://dotfyle.com/plugins/Mofiqul/dracula.nvim)
++ [neanias/everforest-nvim](https://dotfyle.com/plugins/neanias/everforest-nvim)
++ [rose-pine/neovim](https://dotfyle.com/plugins/rose-pine/neovim)
++ [rebelot/kanagawa.nvim](https://dotfyle.com/plugins/rebelot/kanagawa.nvim)
++ [sainnhe/edge](https://dotfyle.com/plugins/sainnhe/edge)
++ [sainnhe/sonokai](https://dotfyle.com/plugins/sainnhe/sonokai)
++ [folke/tokyonight.nvim](https://dotfyle.com/plugins/folke/tokyonight.nvim)
+### colorscheme-creation
+
++ [rktjmp/lush.nvim](https://dotfyle.com/plugins/rktjmp/lush.nvim)
+### comment
+
++ [folke/todo-comments.nvim](https://dotfyle.com/plugins/folke/todo-comments.nvim)
+### completion
+
++ [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
+### diagnostics
+
++ [folke/trouble.nvim](https://dotfyle.com/plugins/folke/trouble.nvim)
+### editing-support
+
++ [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
+### file-explorer
+
++ [mikavilpas/yazi.nvim](https://dotfyle.com/plugins/mikavilpas/yazi.nvim)
++ [echasnovski/mini.files](https://dotfyle.com/plugins/echasnovski/mini.files)
+### fun
+
++ [masamerc/procrastinate.nvim](https://dotfyle.com/plugins/masamerc/procrastinate.nvim)
+### fuzzy-finder
+
++ [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+### git
+
++ [kdheepak/lazygit.nvim](https://dotfyle.com/plugins/kdheepak/lazygit.nvim)
++ [lewis6991/gitsigns.nvim](https://dotfyle.com/plugins/lewis6991/gitsigns.nvim)
++ [sindrets/diffview.nvim](https://dotfyle.com/plugins/sindrets/diffview.nvim)
+### icon
+
++ [nvim-tree/nvim-web-devicons](https://dotfyle.com/plugins/nvim-tree/nvim-web-devicons)
+### indent
+
++ [lukas-reineke/indent-blankline.nvim](https://dotfyle.com/plugins/lukas-reineke/indent-blankline.nvim)
+### keybinding
+
++ [folke/which-key.nvim](https://dotfyle.com/plugins/folke/which-key.nvim)
+### lsp
+
++ [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
++ [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
++ [VonHeikemen/lsp-zero.nvim](https://dotfyle.com/plugins/VonHeikemen/lsp-zero.nvim)
++ [j-hui/fidget.nvim](https://dotfyle.com/plugins/j-hui/fidget.nvim)
+### lsp-installer
+
++ [williamboman/mason.nvim](https://dotfyle.com/plugins/williamboman/mason.nvim)
+### marks
+
++ [ThePrimeagen/harpoon](https://dotfyle.com/plugins/ThePrimeagen/harpoon)
+### note-taking
+
++ [epwalsh/obsidian.nvim](https://dotfyle.com/plugins/epwalsh/obsidian.nvim)
+### nvim-dev
+
++ [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
++ [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
+### plugin-manager
+
++ [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
+### snippet
+
++ [rafamadriz/friendly-snippets](https://dotfyle.com/plugins/rafamadriz/friendly-snippets)
++ [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
+### split-and-window
+
++ [famiu/bufdelete.nvim](https://dotfyle.com/plugins/famiu/bufdelete.nvim)
+### startup
+
++ [goolord/alpha-nvim](https://dotfyle.com/plugins/goolord/alpha-nvim)
+### statusline
+
++ [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
+### syntax
+
++ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
++ [LhKipp/nvim-nu](https://dotfyle.com/plugins/LhKipp/nvim-nu)
++ [nvim-treesitter/nvim-treesitter-textobjects](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter-textobjects)
+### terminal-integration
+
++ [numToStr/FTerm.nvim](https://dotfyle.com/plugins/numToStr/FTerm.nvim)
++ [akinsho/toggleterm.nvim](https://dotfyle.com/plugins/akinsho/toggleterm.nvim)
+### utility
+
++ [rcarriga/nvim-notify](https://dotfyle.com/plugins/rcarriga/nvim-notify)
++ [folke/noice.nvim](https://dotfyle.com/plugins/folke/noice.nvim)
+## Language Servers
+
++ dockerls
++ gopls
++ jsonls
++ lua_ls
++ pyright
++ rust_analyzer
++ terraformls
++ tflint
++ yamlls
++ zls
+
+ This readme was generated by [Dotfyle](https://dotfyle.com)
