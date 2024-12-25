@@ -54,6 +54,7 @@ require("plugin_config.misc")
 require("plugin_config.lualine")
 require("plugin_config.rose-pine")
 require("plugin_config.diffview")
+require("plugin_config.neo-tree")
 
 -- load format options
 require("format")
