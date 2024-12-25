@@ -10,9 +10,6 @@ vim.g.rustfmt_autosave = 1
 -- neoclip: remaps
 vim.keymap.set("n", "<leader>fn", "<cmd>Telescope neoclip<CR>", { desc = "neoclip" })
 
--- mini: remaps
-vim.keymap.set("n", "<leader>e", "<Cmd>lua MiniFiles.open()<CR>")
-
 -- trouble
 vim.keymap.set("n", "<leader>xx", "<Cmd>Trouble diagnostics toggle<CR>", { desc = "Toggle trouble" })
 vim.keymap.set(

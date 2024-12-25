@@ -17,6 +17,11 @@ vim.api.nvim_set_keymap("n", "E", "$", { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Neotree: remaps
+vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
+vim.keymap.set("n", "<leader>ngs", "<Cmd>Neotree git_status<CR>")
+vim.keymap.set("n", "<leader>nb", "<Cmd>Neotree buffers<CR>")
+
 -- window switch
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>l", ":wincmd l<CR>", { silent = true, noremap = true })
