@@ -22,6 +22,9 @@ vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
 vim.keymap.set("n", "<leader>ngs", "<Cmd>Neotree git_status<CR>")
 vim.keymap.set("n", "<leader>nb", "<Cmd>Neotree buffers<CR>")
 
+-- Oil: remaps
+vim.keymap.set("n", "oo", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 -- window switch
 vim.keymap.set("n", "<leader>h", ":wincmd h<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>l", ":wincmd l<CR>", { silent = true, noremap = true })
