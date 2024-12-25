@@ -249,6 +249,8 @@ return {
 		end,
 	},
 	{
+        -- NOTE: for local development
+        -- dir = "/home/bongo/workspace/plugins/procrastinate.nvim",
 		"masamerc/procrastinate.nvim",
 		config = function()
 			require("procrastinate").setup()
