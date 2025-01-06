@@ -1,5 +1,6 @@
 local lsp_zero = require("lsp-zero")
 
+
 lsp_zero.on_attach(function(client, bufnr)
 	-- see :help lsp-zero-keybindings
 	-- to learn the available actions
@@ -9,7 +10,6 @@ end)
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = {
-		"rust_analyzer",
 		"gopls",
 		"pyright",
 		"lua_ls",
@@ -19,13 +19,6 @@ require("mason-lspconfig").setup({
 		"dockerls",
 		"yamlls",
 		"zls",
-	},
-})
-require("lspconfig").rust_analyzer.setup({
-	settings = {
-		diagnostic = {
-			refreshSupport = false,
-		},
 	},
 })
 require("lspconfig").gopls.setup({
@@ -160,6 +153,7 @@ vim.keymap.set("n", "ge", "<cmd>lua vim.diagnostic.open_float()<CR>")
 vim.keymap.set("n", "g]", "<cmd>lua vim.diagnostic.goto_next()<CR>")
 vim.keymap.set("n", "g[", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
 vim.keymap.set("n", "<leader>si", toggle_inlay_hints, { desc = "toggle inlay hints" })
+vim.keymap.set("n","<leader>ra", "<cmd>RustLsp codeAction<CR>", { desc = "Rust code action" })
 
 -- LSP handlers
 vim.lsp.handlers["textDocument/publishDiagnostics"] =
@@ -175,3 +169,5 @@ for _, method in ipairs({ "textDocument/diagnostic", "workspace/diagnostic" }) d
 		return default_diagnostic_handler(err, result, context, config)
 	end
 end
+
+

@@ -280,5 +280,10 @@ return {
         ---@type oil.SetupOpts
         opts = {},
         dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
+    },
+    {
+      'mrcjkb/rustaceanvim',
+      version = '^5', -- Recommended
+      lazy = false, -- This plugin is already lazy
     }
 }
