@@ -2,8 +2,9 @@
 local workenv = os.getenv("WORK_ENV")
 
 if workenv == "work" then
-	vim.cmd("colorscheme gruvbox-material")
-    vim.g.gruvbox_material_transparent_background = 1
+    vim.cmd("colorscheme catppuccin-mocha")
+	-- vim.cmd("colorscheme gruvbox-material")
+	--    vim.g.gruvbox_material_transparent_background = 1
 else
 	vim.cmd("colorscheme tokyonight-night")
 end
