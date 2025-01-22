@@ -19,6 +19,7 @@ require("mason-lspconfig").setup({
 		"dockerls",
 		"yamlls",
 		"zls",
+        "ts_ls",
 	},
 })
 require("lspconfig").gopls.setup({
@@ -44,6 +45,7 @@ require("lspconfig").jsonls.setup({})
 require("lspconfig").dockerls.setup({})
 require("lspconfig").yamlls.setup({})
 require("lspconfig").zls.setup({})
+require("lspconfig").ts_ls.setup({})
 
 require("lspconfig").lua_ls.setup({
 	settings = {
