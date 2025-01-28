@@ -32,3 +32,6 @@ vim.keymap.set("n", "<leader>cod", "<cmd>Codeium Disable<CR>", { desc = "Disable
 
 -- procrastinate.nvim
 vim.keymap.set("n", "<leader>t", "<cmd>InsertTodo<CR>", { desc = "Insert todo" })
+
+-- markview
+vim.keymap.set("n", "<leader>mt", "<cmd>Markview Toggle<CR>", { desc = "Toggle markview" })
