@@ -18,6 +18,7 @@ require("mason-lspconfig").setup({
 		"jsonls",
 		"dockerls",
 		"yamlls",
+        "ruff",
 	},
 })
 require("lspconfig").gopls.setup({
@@ -36,12 +37,26 @@ require("lspconfig").gopls.setup({
 		},
 	},
 })
-require("lspconfig").pyright.setup({})
+require('lspconfig').pyright.setup {
+  settings = {
+    pyright = {
+      -- Using Ruff's import organizer
+      disableOrganizeImports = true,
+    },
+    python = {
+      analysis = {
+        -- Ignore all files for analysis to exclusively use Ruff for linting
+        ignore = { '*' },
+      },
+    },
+  },
+}
 require("lspconfig").terraformls.setup({})
 require("lspconfig").tflint.setup({})
 require("lspconfig").jsonls.setup({})
 require("lspconfig").dockerls.setup({})
 require("lspconfig").yamlls.setup({})
+require("lspconfig").ruff.setup({})
 
 require("lspconfig").lua_ls.setup({
 	settings = {
