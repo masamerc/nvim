@@ -302,9 +302,19 @@ return {
         }
       end,
     },
-    { "shaunsingh/nord.nvim",
+    {
+        "shaunsingh/nord.nvim",
         config = function()
             vim.g.nord_disable_background = true
         end,
+    },
+	{
+        -- dir = "/home/bongo/workspace/plugins/neovim-go-rpc",
+        "Masterbongo/neovim-go-rpc",
+        url = "https://gitlab.com/Masterbongo/neovim-go-rpc",
+        config = function()
+           require("neovim-go-rpc").setup()
+        end,
+        build = "make build-rpc"
     },
 }
