@@ -5,6 +5,9 @@ local work_env = os.getenv("WORK_ENV")
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- enable diagnostics
+vim.diagnostic.config({ virtual_text = true })
+
 -- general
 require("remap")
 require("options")
