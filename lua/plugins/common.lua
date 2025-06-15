@@ -309,12 +309,10 @@ return {
         end,
     },
 	{
-        -- dir = "/home/bongo/workspace/plugins/neovim-go-rpc",
-        "Masterbongo/neovim-go-rpc",
-        url = "https://gitlab.com/Masterbongo/neovim-go-rpc",
+        -- dir = "/home/bongo/workspace/plugins/wc-demo.nvim",
+        "masamerc/wc-demo.nvim",
         config = function()
-           require("neovim-go-rpc").setup()
+           require("wc-demo").setup()
         end,
-        build = "make build-rpc"
     },
 }
