@@ -1,6 +1,3 @@
--- env switch
-local work_env = os.getenv("WORK_ENV")
-
 -- disable netrw at the very start of init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -28,19 +25,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
-local plugins = {}
 
-if work_env == "work" then
-	plugins = {
-		require("plugins.common"),
-		require("plugins.copilot"),
-	}
-else
-	plugins = {
-		require("plugins.common"),
-		require("plugins.codeium"),
-	}
-end
+local plugins = {
+    require("plugins.common"),
+}
 
 require("lazy").setup(plugins, opts)
 

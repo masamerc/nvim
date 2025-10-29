@@ -315,4 +315,8 @@ return {
            require("wc-demo").setup()
         end,
     },
+	{
+		"github/copilot.vim",
+		lazy = false,
+	},
 }
