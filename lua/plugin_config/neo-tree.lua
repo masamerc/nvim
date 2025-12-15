@@ -1,3 +1,4 @@
+-- DO NOT USE
 require("neo-tree").setup({
     window = {
         position = "left",

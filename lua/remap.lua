@@ -17,10 +17,8 @@ vim.api.nvim_set_keymap("n", "E", "$", { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- Neotree: remaps
-vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
-vim.keymap.set("n", "<leader>ngs", "<Cmd>Neotree git_status<CR>")
-vim.keymap.set("n", "<leader>nb", "<Cmd>Neotree buffers<CR>")
+-- -- Yazi: remaps
+-- vim.keymap.set("n", "<leader>e", "<Cmd>Yazi toggle<CR>")
 
 -- Oil: remaps
 vim.keymap.set("n", "go", "<CMD>Oil<CR>", { desc = "Open parent directory" })
