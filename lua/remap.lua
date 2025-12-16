@@ -17,8 +17,10 @@ vim.api.nvim_set_keymap("n", "E", "$", { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- NvimTree: remaps
-vim.keymap.set("n", "<leader>e", "<Cmd>NvimTreeToggle<CR>")
+-- Neotree: remaps
+vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>")
+vim.keymap.set("n", "<leader>ngs", "<Cmd>Neotree git_status<CR>")
+vim.keymap.set("n", "<leader>nb", "<Cmd>Neotree buffers<CR>")
 
 -- Yazi: remaps
 vim.keymap.set("n", "<leader>y", "<Cmd>Yazi toggle<CR>")
