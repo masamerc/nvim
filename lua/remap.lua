@@ -20,6 +20,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- NvimTree: remaps
 vim.keymap.set("n", "<leader>e", "<Cmd>NvimTreeToggle<CR>")
 
+-- Yazi: remaps
+vim.keymap.set("n", "<leader>y", "<Cmd>Yazi toggle<CR>")
+
 -- Oil: remaps
 vim.keymap.set("n", "go", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
