@@ -21,7 +21,7 @@ require("mason-lspconfig").setup({
         -- "ruff",
 	},
 })
-require("lspconfig").gopls.setup({
+vim.lsp.config("gopls", {
 	settings = {
 		gopls = {
 			completeUnimported = true,
@@ -37,7 +37,8 @@ require("lspconfig").gopls.setup({
 		},
 	},
 })
-require('lspconfig').pyright.setup {
+
+vim.lsp.config("pyright", {
   -- settings = {
   --   pyright = {
   --     disableOrganizeImports = true,
@@ -48,15 +49,9 @@ require('lspconfig').pyright.setup {
   --     },
   --   },
   -- },
-}
-require("lspconfig").terraformls.setup({})
-require("lspconfig").tflint.setup({})
-require("lspconfig").jsonls.setup({})
-require("lspconfig").dockerls.setup({})
-require("lspconfig").yamlls.setup({})
--- require("lspconfig").ruff.setup({})
+})
 
-require("lspconfig").lua_ls.setup({
+vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
 			runtime = {
@@ -82,6 +77,28 @@ require("lspconfig").lua_ls.setup({
 		},
 	},
 })
+vim.lsp.config("terrraformls", {})
+vim.lsp.config("tflint", {})
+vim.lsp.config("jsonls", {})
+vim.lsp.config("dockerls", {})
+vim.lsp.config("yamlls", {})
+vim.lsp.config("ruff", {})
+
+vim.lsp.enable({
+    "gopls",
+    "pyright",
+    "terraformls",
+    "tflint",
+    "jsonls",
+    "dockerls",
+    "yamlls",
+    "lua_ls",
+    -- "ruff",
+})
+
+
+
+
 
 local cmp = require("cmp")
 
