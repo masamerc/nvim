@@ -10,21 +10,10 @@ return {
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
 	},
-	{ "rose-pine/neovim", name = "rose-pine" },
-	{ "sainnhe/gruvbox-material" },
 	{
 		"akinsho/nvim-bufferline.lua",
 		branch = "main",
 		dependencies = "nvim-tree/nvim-web-devicons",
-	},
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		config = function()
-			require("catppuccin").setup({
-				transparent_background = true,
-			})
-		end,
 	},
 	{ "nvim-lua/plenary.nvim" },
 	{
@@ -195,22 +184,7 @@ return {
       priority = 1000,
       opts = {},
     },
-	{ "sainnhe/gruvbox-material" },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	{
-		"loctvl842/monokai-pro.nvim",
-		config = function()
-			require("monokai-pro").setup({
-				transparent_background = true,
-			})
-		end,
-	},
-	{
-		"LhKipp/nvim-nu",
-		config = function()
-			require("nu").setup()
-		end,
-	},
 	{ "sindrets/diffview.nvim" },
 	{
 		"goolord/alpha-nvim",
@@ -251,14 +225,6 @@ return {
 			require("procrastinate").setup()
 		end,
 	},
-	{
-		"rktjmp/lush.nvim",
-		-- if you wish to use your own colorscheme:
-		-- { dir = '/absolute/path/to/colorscheme', lazy = true },
-	},
-    {
-        "nvim-treesitter/playground",
-    },
     {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
@@ -284,31 +250,6 @@ return {
     {
         "OXY2DEV/markview.nvim",
         lazy = false
-    },
-    {
-      'olivercederborg/poimandres.nvim',
-      lazy = false,
-      priority = 1000,
-      config = function()
-        require('poimandres').setup {
-          -- leave this setup function empty for default config
-          -- or refer to the configuration section
-          -- for configuration options
-        }
-      end,
-    },
-    {
-        "shaunsingh/nord.nvim",
-        config = function()
-            vim.g.nord_disable_background = true
-        end,
-    },
-	{
-        -- dir = "/home/bongo/workspace/plugins/wc-demo.nvim",
-        "masamerc/wc-demo.nvim",
-        config = function()
-           require("wc-demo").setup()
-        end,
     },
 	{
 		"github/copilot.vim",
