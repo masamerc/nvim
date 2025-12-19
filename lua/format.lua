@@ -1,13 +1,4 @@
--- theme swticher
-local workenv = os.getenv("WORK_ENV")
-
-if workenv == "work" then
-    vim.cmd("colorscheme catppuccin-mocha")
-	-- vim.cmd("colorscheme gruvbox-material")
-	--    vim.g.gruvbox_material_transparent_background = 1
-else
-	vim.cmd("colorscheme tokyonight-night")
-end
+vim.cmd("colorscheme tokyonight-storm")
 
 -- terraform indent settings
 vim.api.nvim_create_autocmd("FileType", {
