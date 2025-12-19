@@ -1,4 +1,4 @@
-vim.cmd("colorscheme tokyonight-storm")
+vim.cmd("colorscheme tokyonight-night")
 
 -- terraform indent settings
 vim.api.nvim_create_autocmd("FileType", {
