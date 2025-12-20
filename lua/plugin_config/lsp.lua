@@ -18,6 +18,7 @@ require("mason-lspconfig").setup({
 		"jsonls",
 		"dockerls",
 		"yamlls",
+        "nil_ls"
         -- "ruff",
 	},
 })
@@ -83,6 +84,7 @@ vim.lsp.config("jsonls", {})
 vim.lsp.config("dockerls", {})
 vim.lsp.config("yamlls", {})
 vim.lsp.config("ruff", {})
+vim.lsp.config("nil_ls", {})
 
 vim.lsp.enable({
     "gopls",
@@ -93,6 +95,7 @@ vim.lsp.enable({
     "dockerls",
     "yamlls",
     "lua_ls",
+    "nil_ls",
     -- "ruff",
 })
 
@@ -191,7 +194,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] =
 for _, method in ipairs({ "textDocument/diagnostic", "workspace/diagnostic" }) do
 	local default_diagnostic_handler = vim.lsp.handlers[method]
 	vim.lsp.handlers[method] = function(err, result, context, config)
-		if err ~= nil and err.code == -32802 then
+		if err ~= nil_ls and err.code == -32802 then
 			return
 		end
 		return default_diagnostic_handler(err, result, context, config)
