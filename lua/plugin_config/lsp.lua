@@ -1,5 +1,17 @@
 local lsp_zero = require("lsp-zero")
 
+local lsp_list = {
+	"gopls",
+	"pyright",
+	"lua_ls",
+	"terraformls",
+	"tflint",
+	"jsonls",
+	"dockerls",
+	"yamlls",
+	"nil_ls",
+	-- "ruff",
+}
 
 lsp_zero.on_attach(function(client, bufnr)
 	-- see :help lsp-zero-keybindings
@@ -9,19 +21,9 @@ end)
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = {
-		"gopls",
-		"pyright",
-		"lua_ls",
-		"terraformls",
-		"tflint",
-		"jsonls",
-		"dockerls",
-		"yamlls",
-        "nil_ls"
-        -- "ruff",
-	},
+	ensure_installed = lsp_list,
 })
+
 vim.lsp.config("gopls", {
 	settings = {
 		gopls = {
@@ -40,16 +42,16 @@ vim.lsp.config("gopls", {
 })
 
 vim.lsp.config("pyright", {
-  -- settings = {
-  --   pyright = {
-  --     disableOrganizeImports = true,
-  --   },
-  --   python = {
-  --     analysis = {
-  --       ignore = { '*' },
-  --     },
-  --   },
-  -- },
+	-- settings = {
+	--   pyright = {
+	--     disableOrganizeImports = true,
+	--   },
+	--   python = {
+	--     analysis = {
+	--       ignore = { '*' },
+	--     },
+	--   },
+	-- },
 })
 
 vim.lsp.config("lua_ls", {
@@ -86,22 +88,7 @@ vim.lsp.config("yamlls", {})
 vim.lsp.config("ruff", {})
 vim.lsp.config("nil_ls", {})
 
-vim.lsp.enable({
-    "gopls",
-    "pyright",
-    "terraformls",
-    "tflint",
-    "jsonls",
-    "dockerls",
-    "yamlls",
-    "lua_ls",
-    "nil_ls",
-    -- "ruff",
-})
-
-
-
-
+vim.lsp.enable(lsp_list)
 
 local cmp = require("cmp")
 
@@ -184,7 +171,7 @@ vim.keymap.set("n", "ge", "<cmd>lua vim.diagnostic.open_float()<CR>")
 vim.keymap.set("n", "g]", "<cmd>lua vim.diagnostic.goto_next()<CR>")
 vim.keymap.set("n", "g[", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
 vim.keymap.set("n", "<leader>si", toggle_inlay_hints, { desc = "toggle inlay hints" })
-vim.keymap.set("n","<leader>ra", "<cmd>RustLsp codeAction<CR>", { desc = "Rust code action" })
+vim.keymap.set("n", "<leader>ra", "<cmd>RustLsp codeAction<CR>", { desc = "Rust code action" })
 
 -- LSP handlers
 vim.lsp.handlers["textDocument/publishDiagnostics"] =
@@ -200,5 +187,3 @@ for _, method in ipairs({ "textDocument/diagnostic", "workspace/diagnostic" }) d
 		return default_diagnostic_handler(err, result, context, config)
 	end
 end
-
-
