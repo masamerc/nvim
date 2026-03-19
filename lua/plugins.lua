@@ -298,4 +298,10 @@ return {
 			vim.g.loaded_netrwPlugin = 1
 		end,
 	},
+    {
+        "ptdewey/pendulum-nvim",
+        config = function()
+            require("pendulum").setup()
+        end,
+    }
 }
