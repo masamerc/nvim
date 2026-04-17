@@ -9,7 +9,6 @@ local lsp_list = {
 	"jsonls",
 	"dockerls",
 	"yamlls",
-	"nil_ls",
 	-- "ruff",
 }
 
@@ -86,7 +85,6 @@ vim.lsp.config("jsonls", {})
 vim.lsp.config("dockerls", {})
 vim.lsp.config("yamlls", {})
 vim.lsp.config("ruff", {})
-vim.lsp.config("nil_ls", {})
 
 vim.lsp.enable(lsp_list)
 
